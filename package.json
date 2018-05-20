@@ -1,31 +1,32 @@
 {
-  "name": "bdsd-mqtt",
-  "version": "1.0.0",
-  "description": "KNX-MQTT gateway for bobaos platform",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bobaos/bdsd-mqtt.git"
-  },
-  "keywords": [
-    "knx",
-    "baos",
-    "bobaos",
-    "bdsd",
-    "mqtt"
-  ],
-  "author": "Vladimir Shabunin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bobaos/bdsd-mqtt/issues"
-  },
-  "homepage": "https://github.com/bobaos/bdsd-mqtt#readme",
-  "dependencies": {
-    "bdsd.client": "^1.0.4",
-    "mqtt": "^2.17.0",
-    "yargs": "^11.0.0"
-  }
+	"name": "bdsd-mqtt",
+	"version": "1.0.0",
+	"description": "KNX-MQTT gateway for bobaos platform",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bobaos/bdsd-mqtt.git"
+	},
+	"keywords": [
+		"knx",
+		"baos",
+		"bobaos",
+		"bdsd",
+		"mqtt"
+	],
+	"author": "Vladimir Shabunin",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bobaos/bdsd-mqtt/issues"
+	},
+	"homepage": "https://github.com/bobaos/bdsd-mqtt#readme",
+	"dependencies": {
+		"bdsd.client": "^1.0.4",
+		"mqtt": "^2.17.0",
+		"yargs": "^11.0.0"
+	}
 }
+
