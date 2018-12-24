@@ -1,0 +1,8 @@
+[Unit]
+Description=KNX MQTT Gateway for Bobaos Datapoint Sdk Daemon
+
+[Service]
+ExecStart=/usr/bin/env bdsd.mqtt -h 192.168.1.12
+
+[Install]
+WantedBy=default.target

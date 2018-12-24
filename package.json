@@ -1,8 +1,11 @@
 {
-	"name": "bdsd-mqtt",
+	"name": "bdsd.mqtt",
 	"version": "1.0.0",
 	"description": "KNX-MQTT gateway for bobaos platform",
 	"main": "index.js",
+	"bin": {
+		"bdsd.mqtt": "./bin/bdsd.mqtt.js"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -26,7 +29,7 @@
 	"dependencies": {
 		"bdsd.client": "^1.0.4",
 		"mqtt": "^2.17.0",
+		"commander": "^2.17.1",
 		"yargs": "^11.0.0"
 	}
 }
-
