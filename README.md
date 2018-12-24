@@ -4,9 +4,9 @@ This module runs a gateway to communicate with a KNX bus using MQTT protocol. It
 
 See the communication diagram:
 
-! [alt text] https://raw.githubusercontent.com/serbande/bdsd-mqtt/master/bdsd.mqtt.diagra.png
+![alt text](https://raw.githubusercontent.com/serbande/bdsd-mqtt/master/bdsd.mqtt.diagra.png) 
 
-As it is shown in the diagram there are two different mqtt topics:
+As it is shown in the diagram there are two different mqtt opics:
 
 * **{topic}/knx2mqtt**
   * Topic used by bdsd.mqtt daemon to publish all the bobaos daemon events. 
