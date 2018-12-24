@@ -57,12 +57,14 @@ $ touch ~/.config/systemd/user/bdsd.mqtt.service
 
 Then add following to this file using your favourite text editor:
 
+> Remeber to change the bdsd.mqtt with your own values (mqtt host, port, topic). Also if you have the bdsd.sock running with custom socket path file, you must specify it.
+
 ```
 [Unit]
 Description=KNX MQTT Gateway for Bobaos Datapoint Sdk Daemon
 
 [Service]
-ExecStart=/usr/bin/env bdsd.mqtt -h 192.168.1.12
+ExecStart=/usr/bin/env bdsd.mqtt -h 192.168.1.12 -p 1883 -t bobaos
 
 [Install]
 WantedBy=default.target
@@ -74,6 +76,18 @@ WantedBy=default.target
 $ systemctl --user daemon-reload
 $ systemctl --user enable bdsd.mqtt.service
 $ sudo loginctl enable-linger pi
+```
+
+**4. Start the service**
+
+```
+$ systemctl --user start bdsd.mqtt.service
+```
+
+**5. Check service status**
+
+```
+$ systemctl --user status bdsd.mqtt.service
 ```
 
 
