@@ -29,7 +29,6 @@
 	"dependencies": {
 		"bdsd.client": "^1.0.4",
 		"mqtt": "^2.17.0",
-		"commander": "^2.17.1",
-		"yargs": "^11.0.0"
+		"commander": "^2.17.1"
 	}
 }
