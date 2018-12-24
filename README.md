@@ -16,11 +16,6 @@ You must have installed bobaos.sock and the daemon must be running in order to e
 
 If not, follow instructions on [bobaos repository page](https://github.com/shabunin/bobaos#installation)
 
-## Installation via script
-
-```
-$ curl -L https://raw.githubusercontent.com/bobaos/bdsd.sock/master/bdsd_install.sh | bash
-```
 
 ## Manual installation
 
