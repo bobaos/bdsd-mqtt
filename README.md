@@ -1,8 +1,12 @@
 # bdsd - mqtt
 
-This module runs a gateway to communicate with the bobaos module using MQTT protocol.
+This module runs a gateway to communicate with a KNX bus using MQTT protocol. It uses bdsd.sock to send and receive messages from the KNX bus, so the bdsd.sock daemon must be installed and running. Please see https://github.com/bobaos/bdsd.sock for more information.
 
-The communication is done through two different topics:
+See the communication diagram:
+
+! [alt text] https://raw.githubusercontent.com/serbande/bdsd-mqtt/master/bdsd.mqtt.diagra.png
+
+As it is shown in the diagram there are two different mqtt topics:
 
 * **{topic}/knx2mqtt**
   * Topic used by bdsd.mqtt daemon to publish all the bobaos daemon events. 
