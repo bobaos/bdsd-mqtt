@@ -13,14 +13,6 @@ As it is shown in the diagram there are two different mqtt opics:
 * **{topic}/mqtt2knx**
   * Topic used to send messages to the KNX bus. The bdsd.mqtt daemon is subscribed to this topic and forwards all the messages to the KNX bus using using the bobaos daemon.
 
-
-# Requisites
-
-You must have installed bobaos.sock and the daemon must be running in order to execute the mqtt gateway.
-
-If not, follow instructions on [bobaos repository page](https://github.com/shabunin/bobaos#installation)
-
-
 ## Manual installation
 
 **1. Install npm package**
