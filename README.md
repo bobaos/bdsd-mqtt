@@ -4,10 +4,10 @@ This module runs a gateway to communicate with the bobaos module using MQTT prot
 
 The communication is done through two different topics:
 
-{topic}/knx2mqtt
-Topic used by bdsd.mqtt daemon to publish all the bobaos daemon events. 
-{topic}/mqtt2knx
-Topic used to send messages to the KNX bus. The bdsd.mqtt daemon is subscribed to this topic and forwards all the messages to the KNX bus using using the bobaos daemon.
+* **{topic}/knx2mqtt**
+  * Topic used by bdsd.mqtt daemon to publish all the bobaos daemon events. 
+* **{topic}/mqtt2knx**
+  * Topic used to send messages to the KNX bus. The bdsd.mqtt daemon is subscribed to this topic and forwards all the messages to the KNX bus using using the bobaos daemon.
 
 
 # Requisites
@@ -16,11 +16,6 @@ You must have installed bobaos.sock and the daemon must be running in order to e
 
 If not, follow instructions on [bobaos repository page](https://github.com/shabunin/bobaos#installation)
 
-## Installation via script
-
-```
-$ curl -L https://raw.githubusercontent.com/bobaos/bdsd.sock/master/bdsd_install.sh | bash
-```
 
 ## Manual installation
 
