@@ -25,12 +25,25 @@ Check if it executes correctly:
 
 ```
 $ bdsd.mqtt
+{ sockFile: '/run/user/1000/bdsd.sock',
+  host: 'localhost',
+  port: '1883',
+  topic: 'bobaos' }
 ```
 
 See bdsd.mqtt command line arguments:.
 
 ```
 $ bdsd.mqtt --help
+Usage: bdsd.mqtt [options]
+
+Options:
+  -s --sockfile <path>  path to socket file. Default: /run/user/1000/bdsd.sock
+  -h --host <value>     mqtt broker host. Default: localhost
+  -p --port [value]     mqtt broker port. Default: 1883
+  -t --topic [value]    topic to publish/subscribe to. <topic>/mqtt2knx, <topic>/knx2mqtt are used. Default: bobaos
+  -h, --help            output usage information
+
 ```
 
 **2. Create systemd service folders, create service file**
